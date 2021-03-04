@@ -1,0 +1,102 @@
+#aboutSection {
+  /* height: 150vh; */
+}
+
+.aboutGridContainer {
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  padding-left: 0;
+}
+#aboutImg {
+  border-radius: 10px;
+  min-width: 10rem;
+  max-width: 20rem;
+  height: 20rem;
+  align-self: center;
+}
+
+#aboutPara {
+  padding-top: 1rem;
+  /* max-width: ch; */
+  font-size: 1.3rem;
+}
+
+.aboutDescription > h2 {
+  padding-top: 2rem;
+}
+
+/* #detailsGridEmail > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+#detailsGridContainer {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+} */
+@media screen and (max-width: 800px) {
+}
+
+@media only screen and (min-width: 992px) {
+  #aboutSection {
+    /* height: 100vh; */
+  }
+  .aboutGridContainer {
+    display: grid;
+    grid-template-columns: 30rem auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "img text";
+  }
+  #aboutImg {
+    border-radius: 10px;
+    width: 20rem;
+    height: 25rem;
+    align-self: center;
+    justify-self: center;
+  }
+  .aboutDescription {
+    grid-area: text;
+    align-self: center;
+  }
+  .aboutDescription > h2 {
+    text-align: left;
+    padding-top: 0;
+  }
+  /* #detailsGridContainer {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "name email"
+      "dob nationality";
+    font-size: 1rem;
+  }
+  #detailsGridName {
+    grid-area: name;
+    align-self: center;
+    padding: 10%;
+    padding-left: 0;
+  }
+  #detailsGridEmail {
+    grid-area: email;
+    align-self: center;
+    padding: 10%;
+    padding-left: 0;
+  }
+  #detailsGridDob {
+    grid-area: dob;
+    align-self: center;
+    padding: 10%;
+    padding-left: 0;
+  }
+  #detailsGridNationality {
+    grid-area: nationality;
+    align-self: center;
+  } */
+}

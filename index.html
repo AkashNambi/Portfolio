@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash's portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <div class="logo"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="myMenu">
+        <li id="home" class="active">Home</li>
+        <li id="about">About</li>
+        <li id="skills">Skills</li>
+        <li id="projects">Projects</li>
+        <li id="contact">Contact</li>
+      </ul>
+    </nav>
+    <main class="mainSection">
+      <section id="homeSection" class="section s1">
+        <div class="intro sectionContent">
+          <p class="first-name">
+            I'm Akash <span class="last-name">Nambi</span>
+          </p>
+          <code class="role"
+            >string role =<span class="role-dev"> "Developer" </span></code
+          >
+          <div id="resume">
+            <i class="fas fa-cloud-download-alt" style="font-size: 1.5rem"></i>
+            <a href="#">Download CV</a>
+          </div>
+
+          <div class="mediaLink">
+            <div class="mediaFlex">
+              <a href="mailto:akashnambitkr2000@gmail.com"
+                ><i class="fas fa-envelope media" style="font-size: 3rem"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/akash-nambi/"
+                ><i class="fab fa-linkedin media" style="font-size: 3rem"></i
+              ></a>
+              <a href="https://twitter.com/akash_nambi"
+                ><i class="fab fa-twitter media" style="font-size: 3rem"></i
+              ></a>
+              <a href="https://github.com/AkashNambi"
+                ><i class="fab fa-github media" style="font-size: 3rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="aboutSection" class="section s2">
+        <div class="aboutContent sectionContent">
+          <div class="circle"></div>
+          <h1 class="sectionHeading">About Me</h1>
+          <div class="aboutGridContainer">
+            <img src="akash.jpg" id="aboutImg" />
+            <div class="aboutDescription">
+              <h2>Hey there, I'm Akash Nambi</h2>
+              <p id="aboutPara">
+                I'm a pre-final year Computer Science undergraduate from Tamil
+                Nadu, India.I am an active learner and enjoy crafting software
+                solutions. I am a Machine Learning and Deep learning enthusiast
+                and also a front end web developer.Table Tennis and Music are my
+                pills of relaxation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="detailsGridContainer" class="sectionContent">
+          <p id="detailsGridName">Name : Akash Nambi R</p>
+          <p id="detailsGridEmail">
+            Email : <a href="#">akashnambitkr2000@gmail.com</a>
+          </p>
+          <p id="detailsGridDob">Date of Birth : 23.06.2000</p>
+          <p id="detailsGridNationality">Nationality : India</p>
+        </div> -->
+      </section>
+      <section id="skillsSection" class="section">
+        <div id="skillsContent" class="sectionContent">
+          <div class="circle"></div>
+          <h1 class="sectionHeading">My Skills</h1>
+          <div class="skillsContainer">
+            <div class="container">
+              <i class="fab fa-html5" style="font-size: 5rem"></i>
+              <p>HTML</p>
+            </div>
+            <div class="container">
+              <i class="fab fa-css3-alt" style="font-size: 5rem"></i>
+              <p>CSS</p>
+            </div>
+            <div class="container">
+              <i class="fab fa-js" style="font-size: 5rem"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="container">
+              <i class="fab fa-react" style="font-size: 5rem"></i>
+              <p>React</p>
+            </div>
+            <div class="container">
+              <i class="fab fa-github" style="font-size: 5rem"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="container">
+              <i class="fab fa-bootstrap" style="font-size: 5rem"></i>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projectsSection" class="section">
+        <div class="sectionContent">
+          <div class="circle"></div>
+          <h1 class="sectionHeading">My Work</h1>
+          <div class="projectsContainer">
+            <div class="pContainer">I-Quiz</div>
+            <div class="pContainer">E-Bid</div>
+          </div>
+          <div class="blogSection">
+            <div class="circle"></div>
+            <h1 class="sectionHeading">My Blogs</h1>
+            <div class="blogContainer">
+              <div class="bContainer">First Pull Request</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contactSection" class="section">
+        <div class="sectionContent">
+          <div class="circle"></div>
+          <h1 class="sectionHeading">Contact Me</h1>
+          <div class="contactContainer">
+            <form class="contactForm" method="POST">
+              <div class="formElement">
+                <input
+                  type="text"
+                  class="formTags"
+                  name="Name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="formElement">
+                <input
+                  type="email"
+                  name="Email"
+                  class="formTags"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="formElement">
+                <textarea
+                  name="Message"
+                  class="formTags"
+                  placeholder="Message"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="formElement">
+                <button class="submitButton" type="submit">Send</button>
+              </div>
+            </form>
+            <div class="myContact">
+              <h1 id="myContactHeading">Get Connected</h1>
+              <div class="contactLinks">
+                <div class="linkItem">
+                  <a href="mailto:akashnambitkr2000@gmail.com"
+                    ><i
+                      class="fas fa-envelope"
+                      style="font-size: 1.5rem; color: #02bb73"
+                    ></i
+                  ></a>
+                </div>
+                <div class="linkItem">
+                  <a href="https://www.linkedin.com/in/akash-nambi/"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="font-size: 1.5rem; color: #02bb73"
+                    ></i
+                  ></a>
+                </div>
+                <div class="linkItem">
+                  <a href="https://twitter.com/akash_nambi"
+                    ><i
+                      class="fab fa-twitter"
+                      style="font-size: 1.5rem; color: #02bb73"
+                    ></i
+                  ></a>
+                </div>
+                <div class="linkItem">
+                  <a href="https://github.com/AkashNambi"
+                    ><i
+                      class="fab fa-github"
+                      style="font-size: 1.5rem; color: #02bb73"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="pageFooter">
+          <p>Designed and Developed by Akash Nambi</p>
+        </footer>
+      </section>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

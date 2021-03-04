@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+.section {
+  padding-top: 10vh;
+  /* height: 100vh; */
+  z-index: -1;
+}
+.s1 {
+  background-color: #f6f7f8;
+}
+
+.sectionContent {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.mainSection {
+  overflow: hidden;
+}
+#homeSection {
+  height: 100vh;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.first-name {
+  font-size: 4rem;
+  color: #343a40;
+  opacity: 1;
+}
+.last-name {
+  color: #343a40;
+  opacity: 0.5;
+}
+.role {
+  color: #343a40;
+  font-size: 2rem;
+}
+.role-dev {
+  color: #02bb73;
+}
+
+#resume {
+  position: relative;
+  top: 5%;
+  background-color: #02bb73;
+  text-align: center;
+  width: 12.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#resume > a {
+  text-decoration: none;
+  position: relative;
+  left: 5%;
+  color: white;
+  font-size: 1rem;
+}
+
+.mediaLink {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.mediaFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.mediaFlex > a {
+  text-decoration: none;
+  color: black;
+}
+.media {
+  margin: 10px;
+}
+
+.circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #fee8ed;
+  position: absolute;
+  top: 0.2rem;
+  left: -0.6rem;
+  z-index: -1;
+}
+
+.sectionHeading {
+  font-size: 3rem;
+}
+
+.skillsContainer {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.container {
+  height: 10rem;
+  width: 10rem;
+  background-color: #fee8ed;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container > p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.projectsContainer,
+.blogContainer {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectsContainer {
+  padding-bottom: 4rem;
+}
+
+.pContainer,
+.bContainer {
+  height: 20rem;
+  width: 100%;
+  background-color: #fee8ed;
+  margin: 1rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 1rem;
+}
+
+.blogSection {
+  position: relative;
+}
+
+.contactContainer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactForm {
+  /* display: block; */
+  background-color: #fee8ed;
+  width: 50%;
+  /* height: 10rem; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+}
+.formElement {
+  padding: 0.5rem;
+}
+
+.formTags {
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.submitButton {
+  background-color: #02bb73;
+  color: white;
+  border: none;
+  width: 5rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+}
+.myContact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.linkItem > a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkItem > a > i {
+  margin: 1rem;
+}
+#myContactHeading {
+  text-align: center;
+}
+
+.pageFooter {
+  height: auto;
+  background-color: #343a40;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.pageFooter > p {
+  color: white;
+  padding: 1rem;
+}
+/* About Section */
+
+@media screen and (max-width: 800px) {
+  .first-name {
+    font-size: 3rem;
+  }
+  .role {
+    font-size: 2rem;
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .contactForm {
+    /* display: block; */
+    background-color: #fee8ed;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .formElement {
+    padding: 0.5rem;
+  }
+
+  .formTags {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .submitButton {
+    background-color: #02bb73;
+    color: white;
+    border: none;
+    width: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    outline: none;
+  }
+  .myContact {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .contactLinks {
+    padding-top: 1rem;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ...;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ...;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  ...;
+}
