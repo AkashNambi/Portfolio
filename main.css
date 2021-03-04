@@ -56,17 +56,20 @@ body {
 #resume {
   position: relative;
   top: 5%;
-  background-color: #02bb73;
-  text-align: center;
-  width: 12.3rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  color: white;
+  /* text-align: center; */
+}
+
+.resumeButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 12rem;
+  padding: 0.4rem;
+  background-color: #02bb73;
+  color: white;
+  border-radius: 10px;
 }
-#resume > a {
+.resumeButton > a {
   text-decoration: none;
   position: relative;
   left: 5%;
@@ -237,14 +240,39 @@ body {
   padding: 1rem;
 }
 /* About Section */
-
+@media screen and (max-width: 430px) {
+  .nameFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-name {
+    font-size: 1rem;
+  }
+  .akash {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 800px) {
+  .nameFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .first-name {
     font-size: 3rem;
   }
-  .role {
-    font-size: 2rem;
+  .akash {
+    text-align: center;
   }
+  #resume {
+    position: relative;
+    top: 5%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+  }
+
   .contactContainer {
     display: flex;
     flex-direction: row;
@@ -292,17 +320,14 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  ...;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  ...;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  ...;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
