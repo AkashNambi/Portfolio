@@ -58,7 +58,7 @@ const sectionCallBack = function (entries, observer) {
 };
 const secOps = {
   root: null,
-  threshold: 0.3,
+  threshold: 0.35,
 };
 const sectionObserver = new IntersectionObserver(sectionCallBack, secOps);
 
@@ -66,6 +66,20 @@ sectionArray.forEach((section) => {
   sectionObserver.observe(section);
 });
 
+// const loader = function (entries, observer) {
+//   const [entry] = entries;
+//   entry.target.classList.remove("sectionHidden");
+// };
+// const loadops = {
+//   root: null,
+//   threshold: 0.2,
+// };
+// const sectionLoader = new IntersectionObserver(loader, loadops);
+
+// for (let i = 1; i < sectionArray.length; i++) {
+//   sectionArray[i].classList.add("sectionHidden");
+//   sectionLoader.observe(sectionArray[i]);
+// }
 const submitform = function (e) {
   e.preventDefault();
   let name = document.querySelector("#name").value;

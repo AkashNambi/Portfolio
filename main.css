@@ -13,6 +13,7 @@ body {
   padding-top: 10vh;
   /* height: 100vh; */
   z-index: -1;
+  transition: transform 1s, opacity 1s;
 }
 .s1 {
   background-color: #f6f7f8;
@@ -27,9 +28,19 @@ body {
 .mainSection {
   overflow: hidden;
 }
+
+.sectionHidden {
+  opacity: 0;
+  transform: translateX(-8rem);
+}
 #homeSection {
   height: 100vh;
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
 }
+
 .intro {
   display: flex;
   flex-direction: column;
