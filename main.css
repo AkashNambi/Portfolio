@@ -155,6 +155,7 @@ body {
   padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectsContainer {
@@ -175,12 +176,12 @@ body {
 .bContainer {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   overflow: hidden;
   /* height: 20rem; */
   width: 100%;
   background-color: #fee8ed;
   border-radius: 10px;
-  padding: 2rem;
 }
 
 .bContainer > a {
@@ -203,7 +204,6 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
-
 .bContainer > a > img:hover {
   opacity: 0.5;
 }
@@ -299,6 +299,18 @@ body {
   .akash {
     text-align: center;
   }
+  .bContainer {
+    width: 100%;
+  }
+  .bContainer > a > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 800px) {
   .nameFlex {
@@ -378,6 +390,10 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .bContainer {
+    width: 75%;
+    padding: 0 2rem 2rem 2rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -386,6 +402,9 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .bContainer {
+    width: 50%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
