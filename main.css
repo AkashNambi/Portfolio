@@ -161,8 +161,7 @@ body {
   padding-bottom: 4rem;
 }
 
-.pContainer,
-.bContainer {
+.pContainer {
   height: 20rem;
   width: 100%;
   background-color: #fee8ed;
@@ -173,10 +172,44 @@ body {
   justify-content: center; */
   padding: 1rem;
 }
-
-.blogSection {
-  position: relative;
+.bContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* height: 20rem; */
+  width: 100%;
+  background-color: #fee8ed;
+  border-radius: 10px;
+  padding: 2rem;
 }
+
+.bContainer > a {
+  margin-top: 1rem;
+  text-align: center;
+  color: #02bb73;
+}
+
+.bContainer > p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.bContainer > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bContainer > a > img:hover {
+  opacity: 0.5;
+}
+/* .blogSection {
+  position: relative;
+} */
 
 .contactContainer {
   padding-top: 3rem;
