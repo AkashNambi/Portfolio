@@ -12,6 +12,60 @@ const aboutSection = document.getElementById("aboutSection");
 const projectsSection = document.getElementById("projectsSection");
 const contactSection = document.getElementById("contactSection");
 
+// const homecoord = homeSection.getBoundingClientRect();
+// const aboutcoord = aboutSection.getBoundingClientRect();
+// const skillscoord = skillsSection.getBoundingClientRect();
+// const projetcscoord = projectsSection.getBoundingClientRect();
+// const contactcoord = contactSection.getBoundingClientRect();
+
+const sectionArray = [
+  homeSection,
+  aboutSection,
+  skillsSection,
+  projectsSection,
+  contactSection,
+];
+
+const sectionCallBack = function (entries, observer) {
+  const [entry] = entries;
+  let c = 0;
+  if (entry.isIntersecting) {
+    switch (entry.target.id) {
+      case "homeSection":
+        c = 1;
+        break;
+      case "aboutSection":
+        c = 2;
+        break;
+      case "skillsSection":
+        c = 3;
+        break;
+      case "projectsSection":
+        c = 4;
+        break;
+      case "contactSection":
+        c = 5;
+        break;
+    }
+    const actLink = links[c - 1];
+    console.log(actLink);
+    if (!links[c - 1].classList.contains("active"))
+      links[c - 1].classList.add("active");
+    links.forEach((link) => {
+      if (link !== actLink) link.classList.remove("active");
+    });
+  }
+};
+const secOps = {
+  root: null,
+  threshold: 0.3,
+};
+const sectionObserver = new IntersectionObserver(sectionCallBack, secOps);
+
+sectionArray.forEach((section) => {
+  sectionObserver.observe(section);
+});
+
 const submitform = function (e) {
   e.preventDefault();
   let name = document.querySelector("#name").value;

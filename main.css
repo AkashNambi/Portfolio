@@ -111,6 +111,9 @@ body {
   font-size: 3rem;
 }
 
+#skillsSection {
+  margin-bottom: 3rem;
+}
 .skillsContainer {
   padding-top: 4rem;
   display: flex;
