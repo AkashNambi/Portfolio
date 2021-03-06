@@ -19,7 +19,6 @@
 
 #aboutPara {
   padding-top: 1rem;
-  /* max-width: ch; */
   font-size: 1.3rem;
   text-align: justify;
 }
@@ -42,6 +41,10 @@
   font-size: 1rem;
 } */
 @media screen and (max-width: 800px) {
+  #aboutPara {
+    text-align: justify;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
