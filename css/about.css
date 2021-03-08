@@ -1,5 +1,4 @@
 #aboutSection {
-  /* height: 150vh; */
   margin-bottom: 3rem;
 }
 
@@ -27,19 +26,6 @@
   padding-top: 2rem;
 }
 
-/* #detailsGridEmail > a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
-#detailsGridContainer {
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1rem;
-} */
 @media screen and (max-width: 800px) {
   #aboutPara {
     text-align: justify;
@@ -48,9 +34,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-  #aboutSection {
-    /* height: 100vh; */
-  }
   .aboutGridContainer {
     display: grid;
     grid-template-columns: 30rem auto;
@@ -73,36 +56,4 @@
     text-align: left;
     padding-top: 0;
   }
-  /* #detailsGridContainer {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-      "name email"
-      "dob nationality";
-    font-size: 1rem;
-  }
-  #detailsGridName {
-    grid-area: name;
-    align-self: center;
-    padding: 10%;
-    padding-left: 0;
-  }
-  #detailsGridEmail {
-    grid-area: email;
-    align-self: center;
-    padding: 10%;
-    padding-left: 0;
-  }
-  #detailsGridDob {
-    grid-area: dob;
-    align-self: center;
-    padding: 10%;
-    padding-left: 0;
-  }
-  #detailsGridNationality {
-    grid-area: nationality;
-    align-self: center;
-  } */
 }
